@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { css } from "styled-components";
+import { About } from "./components/About";
 
 import { Intro } from "./components/Intro";
 
@@ -26,10 +27,15 @@ const IntroShape = styled.div`
 
 function App() {
   return (
-    <Container>
-      <Intro/>
-      <IntroShape/>
-    </Container>
+    <>
+      <Container>
+        <Intro/>
+        <IntroShape/>
+      </Container>
+      <Container>
+        <About/>
+      </Container>
+    </>
   );
 }
 
